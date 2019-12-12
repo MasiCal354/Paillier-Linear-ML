@@ -58,4 +58,4 @@ class PaillierClassifier(PaillierLM):
             indices = y_pred.argmax(axis=1)
         
         y_class = self.model.classes_[indices]
-        return acuracy_score(y, y_class)
+        return accuracy_score(y, y_class)
